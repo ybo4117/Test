@@ -25,7 +25,7 @@ public class IfMission {
 		} else { // ~ 69
 			System.out.println("D 등급");
 		}
-		System.out.println("끝");
+		System.out.println("끝"); 
 
 	}
 }
