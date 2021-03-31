@@ -1,3 +1,4 @@
+package sec06.ch04;
 
 public class ForMisson8 {
 	public static void main(String[] args) {
