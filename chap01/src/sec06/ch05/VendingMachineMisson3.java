@@ -17,7 +17,7 @@ public class VendingMachineMisson3 {
 			for (int i = 0; i < menuPriceArr.length; i++) {
 				System.out.printf("%d. %s (%,d원)\n", i + 1, menuNmArr[i], menuPriceArr[i]);
 			}
-			System.out.print("선택> ");
+			System.out.print("선택 > ");
 			int select = scan.nextInt();
 			
 			if (select == 0) {
