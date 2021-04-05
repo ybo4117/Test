@@ -7,7 +7,7 @@ public class IfMisson2Another {
 	public static void main(String[] args) {
 		
 		String gender = "남"; // 여;		
-		int height= 175;
+		int height= 176;
 		
 		final String MAN_GENDER = "남자";
 		final String WOMAN_GENDER = "여자";

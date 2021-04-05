@@ -13,7 +13,7 @@ public class MethodMisson4 {
 		System.out.println("---------------");
 		
 		
-		rNum = getRandomNum(5,10);
+		rNum = getRandomNum(5,10); 
 		System.out.println("rNum : " + rNum);
 		rNum = getRandomNum(10,20);
 		System.out.println("rNum : " + rNum);		
