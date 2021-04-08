@@ -21,10 +21,11 @@ public class CapsuleExam {
 class Human {
 	private int age;
 	private String name;	
-	// 생성자 !!!!
+	// 생성자 !!!! >> 생성자 이름은 클래스 이름이랑 같아야 함 , 리턴타입이 없음 ( 생성자 생성에 순서가중요 !)
 	// => 생성자와 메소드로 private에 값을 넣을수 있다 !!!
 	// 메소드 !!!!
-
+	// this( ) << 생성자 호출
+	// this.~~~ << 멤버필드 호출
 	Human() {
 		this(10);	
 	}
