@@ -22,7 +22,7 @@ class CalcStatic2 {
 	static int num1;
 	static int num2;
 
-	static int sum(int num1, int num2) {
+	static int sum() {
 		return num1 + num2;
 	}
 }
