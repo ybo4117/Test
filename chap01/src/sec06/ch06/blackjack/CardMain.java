@@ -11,7 +11,7 @@ public class CardMain {
 		
 		Card c3 = new Card("club", "J");
 //		System.out.println(c3); // club (J)
-		new CardDeck();
+		
 		System.out.println();
 	
 	}

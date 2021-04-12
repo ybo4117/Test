@@ -23,6 +23,8 @@ class Animal extends Object {
 	void howling() {
 		System.out.println("운다");
 	}
+	
+	
 }
 
 // super();  << 내 바로위의 부모를 뜻함

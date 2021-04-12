@@ -8,7 +8,7 @@ public class CardDeck {
 	public CardDeck() {
 		super();
 		int idx = 0;
-		for (int i = 0 ; i < CARD_PATTERN.length ; i++) {
+		for (int i = 0; i < CARD_PATTERN.length; i++) {
 //		for(String pattern : CARD_PATTERN){
 			for (int z = 1; z <= 13; z++) {
 				String symbol;
@@ -33,5 +33,37 @@ public class CardDeck {
 			System.out.println();
 		}
 	}
+
+	private int getRandomIdx() {
+		return (int)(Math.random()*CARD_ARR.length);
+	}
+
+	public Card getOneCard() {
+		int ran = getRandomIdx();
+		Card card = new Card();
+
+		while (CARD_ARR[ran] == null) {
+			ran = getRandomIdx();
+			if (CARD_ARR[ran] != null) {
+				card = CARD_ARR[ran];
+				CARD_ARR[ran] = null;
+				return card;
+			}			
+		}
+		card = CARD_ARR[ran];
+		CARD_ARR[ran] = null;
+		return card;
+	}
+
+	public void printAll() {
+		
+		for(int i = 0 ; i < CARD_ARR.length ; i++) {
+			System.out.println(CARD_ARR[i]);
+		}
+		
+		// foreach문도 사용가능
+		
+	}
+	
 
 }

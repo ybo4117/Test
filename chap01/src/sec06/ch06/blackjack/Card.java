@@ -28,4 +28,6 @@ public class Card {
 		return String.format("%s (%s)", pattern, symbol);
 
 	}
+	
+	
 }
