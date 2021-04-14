@@ -9,10 +9,14 @@ public class ArrayListMisson {
 		list.add(20);
 		list.add(40);
 		list.add(50);
-		list.add(80);
-		int val = list.remove();
-
-		System.out.println("val : " + val);
+		
+		list.add(2, 30);
+		
+		int delVal = list.remove(1);
+		System.out.println("delVal : " + delVal);
+		
+//		int val = list.remove(); 
+//		System.out.println("val : " + val);
 
 		for (int i = 0; i < list.size(); i++) {
 			System.out.printf("%d : %d\n", i, list.get(i));

@@ -18,6 +18,21 @@ public class MyArrayList implements MyList {
 	}
 
 	@Override
+	public void add(int num1, int num2) {
+		int[] temp = new int[arr.length + 2];
+		for (int i = 0; i < arr.length; i++) {
+			if (i >= num1) {
+				temp[i + 1] = arr[i];
+			} else {
+				temp[i] = arr[i];
+			}
+		}
+		temp[num1] = num2;
+		arr = temp;
+
+	}
+
+	@Override
 	public int size() {
 		return arr.length;
 	}
@@ -28,16 +43,41 @@ public class MyArrayList implements MyList {
 	}
 
 	@Override
-	public int remove() {		
+	public int remove() {
 		int[] temp = new int[arr.length - 1];
-		
-		for(int i = 0 ; i < temp.length ; i++) {
+
+		for (int i = 0; i < temp.length; i++) {
 			temp[i] = arr[i];
 		}
 		int lastVal = arr[temp.length];
 		arr = temp;
 
 		return lastVal;
+	}
+
+	@Override
+	public int remove(int num1) {
+//		int[] temp = new int[arr.length - 2];
+//		
+//		for (int i = 0; i < temp.length; i++) {
+//			if (num1 <= i) {
+//				temp[i] = arr[i+1];
+//			}else {
+//				temp[i] = arr[i];
+//			}
+//		}
+//		int delVal = temp[num1];			
+//		arr = temp;
+//		return delVal;
+		
+		int delVal = arr[num1];
+		int[] temp = new int[arr.length-1];
+		for(int i = 0 ; i < temp.length ; i++) {
+			int tIdx = i < num1 ? i : i+1;
+			temp[i] = arr[tIdx];
+		}
+		arr=temp;
+		return delVal;
 	}
 
 }

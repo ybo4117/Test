@@ -5,4 +5,6 @@ public interface MyList {
 	int size();
 	int get(int get);
 	int remove();
+	void add(int num1, int num2);
+	int remove(int i); 
 }
